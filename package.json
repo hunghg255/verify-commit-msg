@@ -1,0 +1,19 @@
+{
+  "name": "verify-commit-msg",
+  "version": "0.0.4",
+  "description": "Verify commit message format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "verify-commit-msg": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [],
+  "author": "hunghg255",
+  "license": "ISC"
+}
