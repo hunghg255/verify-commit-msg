@@ -10,13 +10,15 @@
 npm i verify-commit-msg -D
 ```
 
-## Usage with `husky`
+## Update script `package.json`
 
 ```bash
  "scripts": {
-    "verify-commit-msg": "verify-commit-msg"
+    "verify-commit": "verify-commit-msg"
   },
 ```
+
+## Usage with `husky`
 
 ### Config `.husky/commit-msg`
 
@@ -24,20 +26,20 @@ npm i verify-commit-msg -D
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm run verify-commit-msg
+npm run verify-commit
 ```
 
-## Usage with `simple-git-hooks@2.8.1`
+## Usage with `simple-git-hooks`
 
 ### Install
 ```
-npm i simple-git-hooks@2.8.1 -D
+npm i simple-git-hooks -D
 ```
 
-### Config `package.json`
+### Update `package.json`
 
 ```bash
 "simple-git-hooks": {
-  "commit-msg": "verify-commit-msg"
+  "commit-msg": "npm run verify-commit"
 },
 ```
