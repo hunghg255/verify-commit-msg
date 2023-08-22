@@ -1,19 +1,39 @@
 {
   "name": "verify-commit-msg",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Verify commit message format",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "unbuild",
+    "dev": "unbuild --stub"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "bin": {
-    "verify-commit-msg": "./index.js"
+    "verify-commit-msg": "./bin/cli.mjs"
   },
   "files": [
-    "index.js",
-    "README.md"
+    "bin",
+    "dist",
+    "LICENSE"
   ],
   "keywords": [],
   "author": "hunghg255",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "esno": "^0.16.3",
+    "git-scm-hooks": "^0.0.5",
+    "terser": "^5.17.1",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4",
+    "verify-commit-msg": "^0.0.4"
+  }
 }

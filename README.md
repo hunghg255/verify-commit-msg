@@ -29,17 +29,13 @@ npm i verify-commit-msg -D
 npm run verify-commit
 ```
 
-## Usage with `simple-git-hooks`
+## Usage with `git-scm-hooks`
 
-### Install
-```
-npm i simple-git-hooks -D
-```
 
 ### Update `package.json`
 
 ```bash
-"simple-git-hooks": {
+"git-hooks": {
   "commit-msg": "npm run verify-commit"
 },
 ```
