@@ -1,6 +1,6 @@
 {
   "name": "verify-commit-msg",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Verify commit message format",
   "scripts": {
     "build": "unbuild",
@@ -24,7 +24,6 @@
     "dist",
     "LICENSE"
   ],
-  "keywords": [],
   "author": "hunghg255",
   "license": "ISC",
   "devDependencies": {
@@ -35,5 +34,18 @@
     "tslib": "^2.5.2",
     "typescript": "^5.0.4",
     "verify-commit-msg": "^0.0.4"
+  },
+  "keywords": [
+    "Git",
+    "commit",
+    "Verify commit"
+  ],
+  "bugs": {
+    "url": "https://github.com/hunghg255/verify-commit-msg/issues"
+  },
+  "homepage": "https://github.com/hunghg255/verify-commit-msg#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunghg255/verify-commit-msg.git"
   }
 }
