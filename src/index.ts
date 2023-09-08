@@ -8,7 +8,7 @@ const msgPath = path.resolve('.git/COMMIT_EDITMSG');
 const msg = fs.readFileSync(msgPath, 'utf-8').trim();
 
 const commitRE =
-  /^((feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|types|wip|release|deps?|merge|examples?|revert)(\(.+\))?(\:|\!\:)|(Merge|Revert|Version)) .{1,50}$/;
+  /^((feat|fix|docs|style|core|i18n|report|misc|cli|audits|refactor|perf|test|workflow|build|ci|chore|types|wip|release|deps?|merge|examples?|revert)(\(.+\))?(\:|\!\:)|(Merge|Revert|Version)) .{1,50}$/;
 
 if (!commitRE.test(msg)) {
   console.log();
