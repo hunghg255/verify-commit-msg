@@ -1,6 +1,6 @@
 {
   "name": "verify-commit-msg",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Verify commit message format",
   "scripts": {
     "build": "unbuild",
