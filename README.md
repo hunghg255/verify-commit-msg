@@ -31,6 +31,7 @@ npm run verify-commit
 
 ## Usage with `git-scm-hooks`
 
+[git-scm-hooks](https://github.com/hunghg255/git-scm-hooks)
 
 ### Update `package.json`
 
