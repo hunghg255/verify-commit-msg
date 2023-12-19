@@ -21,7 +21,7 @@ npm i verify-commit-msg -D
 ### Config `.husky/commit-msg`
 
 ```bash
-npx husky add .husky/pre-commit "npm run verify-commit"
+npx husky add .husky/commit-msg "npm run verify-commit"
 ```
 
 ## Usage with `git-scm-hooks`
