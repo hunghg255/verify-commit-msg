@@ -25,19 +25,13 @@
 npm i verify-commit-msg -D
 ```
 
-## Update script `package.json`
+## Usage with `git-scm-hooks`
 
-- Bash
-```bash
-npm pkg set scripts.verify-commit=verify-commit-msg
-```
-
-- Or manually update `package.json`
+[git-scm-hooks](https://github.com/hunghg255/git-scm-hooks)
 
 ```bash
-"scripts": {
-  "verify-commit": "verify-commit-msg"
-},
+  npm pkg set scripts.verify-commit=verify-commit-msg
+  npm pkg set git-hooks.commit-msg="npm run verify-commit"
 ```
 
 ## Usage with `husky`
@@ -46,6 +40,7 @@ npm pkg set scripts.verify-commit=verify-commit-msg
 
 - Bash
 ```bash
+npm pkg set scripts.verify-commit=verify-commit-msg
 npx husky add .husky/commit-msg "npm run verify-commit"
 ```
 
@@ -58,14 +53,3 @@ npx husky add .husky/commit-msg "npm run verify-commit"
 npm run verify-commit
 ```
 
-## Usage with `git-scm-hooks`
-
-[git-scm-hooks](https://github.com/hunghg255/git-scm-hooks)
-
-### Update `package.json`
-
-```bash
-"git-hooks": {
-  "commit-msg": "npm run verify-commit"
-},
-```
